@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+</head>
+<body>
+	<form action="/action_page.php" novalidate>
+		<label for="fname">First Name:</label><br>
+		<input type="text" id="fname" name="fname" value="Sayma" disabled size="50" autofocus><br>
+		<label for="lname">Last Name:</label><br>
+		<input type="text" id="lname" name="lname" value="Mony" readonly><br><br>
+		<label for="pin">PIN</label><br>
+		<input type="text" name="pin" id="pin" maxlength="4" size="4"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<br><br>
+
+	<form method="post">
+		<input type="radio" name="language" id="html" value="HTML">
+		<label for="html">HTML</label><br>
+		<input type="radio" name="language" id="css" value="CSS">
+		<label for="css">CSS</label><br>
+		<input type="radio" name="language" id="javascript" value="JavaScript">
+		<label for="javascript">JavaScript</label>
+	</form>
+
+	<br><br>
+
+	<form action="/action_page.php" target="_blank" method="get">
+		<input type="checkbox" name="red" id="red" value="Red">
+		<label for="red">Red</label><br>
+		<input type="checkbox" name="blue" id="blue" value="Blue">
+		<label for="blue">Blue</label><br>
+		<input type="checkbox" name="green" id="green" value="Green">
+		<label for="green">Green</label>
+	</form>
+
+	<form>
+		<label for="color">Choose a color:</label>
+		<select id="color" name="color" size="4" multiple>
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="green" selected>Green</option>
+			<option value="pink">Pink</option>
+		</select>
+		<input type="submit">
+	</form>
+
+	<br><br>
+
+	<button title="button" onclick="alert('Hello World')">Click Me!</button>
+
+	<br><br>
+
+	<form action="/action_page.php">
+		<label for="username">Username:</label><br>
+		<input type="text" name="username" id="username" required><br><br>
+		<label for="password">Password:</label><br>
+		<input type="password" name="password" id="password"><br><br>
+		<label for="birthday">Birthday:</label><br>
+		<input type="datetime-local" name="birthday" id="birthday"><br><br>
+		<label for="file">Select a file:</label><br>
+		<input type="file" name="file" id="file"><br><br>
+		<input type="submit" value="Submit">
+		<input type="reset" name="">
+	</form>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Sayma">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="description" content="Learn html">
+	<base href="image/">
+	<link rel="icon" type="image" href="letter-w.png">
+	<link rel="stylesheet" type="text/css" href="">
+	<style>
+		body{
+			background-image: url(background.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			max-width: 100%;
+			height: auto;
+		}
+
+		table, th, td{
+			border-collapse: collapse;
+		}
+		th, td{
+			text-align: left;
+			padding: 15px;
+			border-bottom: 1px solid black;
+		}
+		tr:nth-child(even){
+			background-color: skyblue;
+		}
+		tr:hover{
+			background-color: white;
+		}
+
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: whitesmoke;
+		}
+		li{
+			float: left;
+		}
+		li a{
+			display: block;
+			color: black;
+			text-align: center;
+			padding: 30px;
+			text-decoration: none;
+		}
+		li a:hover{
+			background-color: skyblue;
+		}
+	</style>
+	<title>Some HTML Tag</title>
+</head>
+<body style="background-color: powderblue;">
+
+	<h1 style="color: blue;">This is a link..</h1>
+	<a href="https://www.w3schools.com" title="Click Here" target="_blank">This is a link</a>
+
+	<h1 style="font-size: 10vw;">This is a image..</h1>
+	<img src="w3s.jpg" alt="error" width="100px" height="100px">
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<blockquote cite="https://www.lipsum.com/"> sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote></p>
+
+	<address>
+		Written by Sayma Mony.<br>
+		Visit us at:<br>
+		Example.com<br>
+		Dhaka, Bangladesh<br>
+	</address>
+
+	<p>This is a <cite>cite</cite> tag..</p>
+
+	<h2>Image as a link..</h2>
+	<a href="https://www.w3schools.com"><img src="emoji.png" alt="error" style="width: 42px; height: 42px"></a>
+	<br>
+	<button onclick="document.location='https://www.w3schools.com'">Click Hera</button>
+	<br><br>
+
+	<img src="laptop.png" usemap="#workmap" alt="error">
+	<map name="workmap">
+		<area shape="rect" coords="168,96,32,34" alt="error" href="phone.png" target="_blank">
+	</map>
+
+	<table style="width: 100%">
+		<tr>
+			<th>FirstName</th>
+			<th>LastName</th>
+			<th>AgeName</th>
+		</tr>
+		<tr>
+			<td>Ali</td>
+			<td>Anu</td>
+			<td>Tnu</td>
+		</tr>
+		<tr>
+			<td>Miya</td>
+			<td>Akter</td>
+			<td>Begom</td>
+		</tr>
+		<tr>
+			<td>25</td>
+			<td>20</td>
+			<td>27</td>
+		</tr>
+	</table>
+	<br>
+	<table style="width: 100%">
+		<tr>
+			<th colspan="2">Name</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Ali</td>
+			<td>Miya</td>
+			<td>20</td>
+		</tr>
+
+		<tr>
+			<td>Tnu</td>
+			<td>Miya</td>
+			<td>20</td>
+		</tr>
+	</table>
+	<br>
+	<h1>This is list..</h1>
+	<ul style="list-style-type: none;">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<ol type="A">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+	<h1>Navigation Menu List</h1>
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>
+	<br>
+	<button type="button" onclick="myfunction()">Click Me!</button>
+	<h1 id="demo">This is JavaScript!</h1>
+	<script>
+		function myfunction() {
+			document.getElementById('demo').innerHTML = "Hello";
+		}
+	</script>
+</body>
+</html>
